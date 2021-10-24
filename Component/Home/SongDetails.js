@@ -26,7 +26,7 @@ const SongDetails = ({route}) => {
         
     }
   })
-  console.log(song.song.id)  
+ 
   const Item=({item,index})=>{
   
      
