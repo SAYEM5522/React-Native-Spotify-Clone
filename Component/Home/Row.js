@@ -3,7 +3,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 import Animated, { useAnimatedGestureHandler, useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import { PinchGestureHandler, TapGestureHandler } from 'react-native-gesture-handler';
-const Row = ({item}) => {
+const Row = ({item,index}) => {
   const pressed=useSharedValue(false);
   const navigation=useNavigation();
   const onGestureEvent=useAnimatedGestureHandler({

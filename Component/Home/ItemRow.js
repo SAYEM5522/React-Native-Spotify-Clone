@@ -3,16 +3,16 @@ import { FlatList, StyleSheet, Text, View } from 'react-native'
 import Row from './Row'
 
 const ItemRow = ({title,item}) => {
-  const renderItem=({item})=>{
+  const renderItem=({item,index})=>{
     return(
-      <View>
-        <Row item={item}/>
+      <View >
+        <Row item={item} index={index}/>
       </View>
     )
   }
   return (
-    <View>
-      <Text style={{color:'white',fontSize:23,fontWeight:'bold'}}>{title}</Text>
+    <View  >
+      <Text style={{color:'white',fontSize:23,fontWeight:'bold',marginTop:38}}>{title}</Text>
       <FlatList
       data={item}
       keyExtractor={(item)=>item.id}

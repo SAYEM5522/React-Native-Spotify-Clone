@@ -34,17 +34,18 @@ const Home = () => {
   }]
   const renderItem=()=>{
     return(
-      <View style={{paddingTop:20,paddingHorizontal:15}}>
+      <View >
       
       <Header/>
       <Recent/>
-      <ItemRow title="To get you started" item={items.map((item)=>item)}/>
+      <View style={{marginTop:-95,marginLeft:15}}>
+      <ItemRow title="What's your mood" item={items.map((item)=>item)}/>
       <ItemRow title="Try something else" item={items.map((item)=>item)}/>
       <ItemRow title="Throwback" item={items.map((item)=>item)}/>
       <ItemRow title="Today's biggest hits" item={items.map((item)=>item)}/>
       <ItemRow title="To get you started" item={items.map((item)=>item)}/>
       <ItemRow title="To get you started" item={items.map((item)=>item)}/>
-
+      </View>
       </View>
     )
   }

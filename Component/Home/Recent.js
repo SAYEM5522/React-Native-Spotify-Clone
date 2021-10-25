@@ -40,7 +40,7 @@ const Recent = () => {
     name:'Lana Dellary',
   }]
   return (
-    <View>
+    <View style={{position:'absolute',top:100,left:15}}>
      <FlatList
      data={data}
      keyExtractor={(item)=>item.id}
